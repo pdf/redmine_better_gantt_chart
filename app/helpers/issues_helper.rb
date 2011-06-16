@@ -18,6 +18,8 @@ module IssuesHelper
     @cached_label_project ||= l(:field_project)
     @cached_label_follows ||= l(:label_follows)
     @cached_label_precedes ||= l(:label_precedes)
+    @cached_label_blocks ||= l(:label_blocks)
+    @cached_label_block_by ||= l(:label_blocked_by)
     @cached_label_delay ||= l(:field_delay)        
 
     content = link_to_issue(issue) + "<br /><br />" +

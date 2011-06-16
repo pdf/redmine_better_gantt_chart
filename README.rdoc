@@ -28,15 +28,15 @@ Connection arrows are rendered in SVG via {Raphael.js}[http://raphaeljs.com/] li
 == Usage
 
 1. Open an existing issue in Redmine
-2. Click *Add* in *Related* *Issues* section, select type of relation 'Follows' or 'Precedes' and enter # of the related issue.
+2. Click *Add* in *Related* *Issues* section, select type of relation 'Follows', 'Precedes', 'Blocks' or 'Blocked By' and enter # of the related issue.
 3. Save changes.
 4. Go to *Gantt* tab. 
 
 == Problems and Limitations
 
-- Currently only '*follows*' and '*precedes*' relations are used to calculate schedule of dependend issues. Other relation types are rendered on the chart, but they *do* *not* *change* schedule of related issues. 
+- Currently only '*follows*', '*precedes*', '*blocks*' and '*blocked by*' relations are used to calculate schedule of dependend issues. Other relation types are rendered on the chart, but they *do* *not* *change* schedule of related issues. 
 - Only 'finish-to-start' dependency type is available.
-- One issue can precede many issues but, can be preceeded with only one issue. 
+- One issue can precede/block many issues but, can be preceeded/blocked by only one issue. 
 
 == Helping out
 
